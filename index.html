@@ -5,14 +5,14 @@
     
     <head>
         <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-220003080-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-220003080-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-  gtag('config', 'UA-220003080-1');
-</script>
+          gtag('config', 'UA-220003080-1');
+        </script>
 
         <meta charset="UTF-8">
         <title>Casa Criativa</title>
@@ -26,14 +26,14 @@
     
     <body>
         <div id="container">
-            <header>
+            <header class="menu">
         <div>
-            <a href="index.html">
-                <img src="logo.png" alt="Imagem da Logomarca">
-            </a>
+        <a href="index.html">
+            <img src="logo.png" alt="Imagem da Logomarca">
+        </a>
         </div>
         
-        <div>
+        <div class="nav">
             <a href="ideias.html">Ideias</a>
             <a href="IdeiaDaSemana.html">Ideia da Semana</a>
             <a href="ideiasNew.html">Adicionar + Ideias</a>
@@ -41,128 +41,78 @@
             <a href="Avaliação.html">Ideia da Semana</a>    
         </div>
     </header>
-            <section id="intro">
-    
+            
+    <section id="intro">
+        <main>
+            <p>
+                Ficar em casa em períodos longos,não deve ser nada fácil.
+            </p>
 
-    <main>
-        <p>
-            Ficar em casa em períodos longos,não deve ser nada fácil.
-        </p>
+            <p>  
+                Por isso,iremos catalogar ideias,<strong>brincadeiras,jogos,filmes,
+                livros,cursos,dicas</strong> e tudo que for necessário para tornar 
+                esse momento mais interessante.
+            </p>
 
-        <p>  
-            Por isso,iremos catalogar ideias,<strong>brincadeiras,jogos,filmes,
-            livros,cursos,dicas</strong> e tudo que for necessário para tornar 
-            esse momento mais interessante.
-        </p>
+            <p>    
+                Comece clicando em ver ideias para ver as 
+                ideias cadastradas e contribua adicionando a sua ideia.
+            </p>
+        </main>
 
-        <p>    
-            Comece clicando em ver ideias para ver as 
-            ideias cadastradas e contribua adicionando a sua ideia.
-        </p>
-    </main>
-
-    <section id="buttons">
-        <button onclick="onOff()">+ Adicionar Ideia</button>
-        <a href="ideias.html" class="button">Ver ideias</a>
+        <section id="buttons">
+            <button onclick="onOff()">+ Adicionar Ideia</button>
+            <a href="ideias.html" class="button">Ver ideias</a>
+        </section>
     </section>
-
-    <footer>
-        Com ❤ Matheus.
-    </footer>
-
-</section>
-            <section id="last-ideias">
-
+            
+    <section id="last-ideias">
         <section id="ideas">
-
             <div class="idea">  
-        <img src="cozinhando.png" alt="Imagem de cozinhar">
+                <img src="cozinhando.png" alt="Imagem de cozinhar">
                         
-            <div class="content">
-                <h3>Aprender a cozinhar</h3>
-                <p>Gastronómica</p>
-                <div class="description">
-                    Aprender a cozinhar pode ser um hobbie novo e inesperado para tirar a cabeça da rotina.
+                <div class="content">
+                    <h3>Aprender a cozinhar</h3>
+                    <p>Gastronómica</p>
+                    <div class="description">
+                        Aprender a cozinhar pode ser um hobbie novo e inesperado para tirar a cabeça da rotina.
+                    </div>
+                    <a href="https://receitas.globo.com" target="_blank">Ir para a ideia</a>
                 </div>
-                <a href="https://receitas.globo.com" target="_blank">Ir para a ideia</a>
-            </div>
           </div>
             
             <div class="idea">  
-        <img src="abra-o-livro.png" alt="Imagem de ler">
+                <img src="abra-o-livro.png" alt="Imagem de ler">
                         
-            <div class="content">
-                <h3>Conhecer a leitura</h3>
-                <p>Conhecimentos</p>
-                <div class="description">
-                    Ler livros diariamente pode lhe dar uma extrema imahinação e satisfação.
+                <div class="content">
+                    <h3>Conhecer a leitura</h3>
+                    <p>Conhecimentos</p>
+                    <div class="description">
+                        Ler livros diariamente pode lhe dar uma extrema imahinação e satisfação.
+                    </div>
+                    <a href="https://www.amazon.com.br/Livros/b?ie=UTF8&node=6740748011" target="_blank">Ir para a ideia</a>
                 </div>
-                <a href="https://www.amazon.com.br/Livros/b?ie=UTF8&node=6740748011" target="_blank">Ir para a ideia</a>
             </div>
-                </div>
             
             <div class="idea">  
-         <img src="tira-de-filme.png" alt="Imagem de filme">
+                <img src="tira-de-filme.png" alt="Imagem de filme">
                         
-            <div class="content">
-                <h3>Maratonar filmes/séries</h3>
-                <p>Entretenimento</p>
-                <div class="description">
-                    Nada como poder maratonar seus filmes e séries favoritos para esquecer o mundo não é mesmo ?? 
+                <div class="content">
+                    <h3>Maratonar filmes/séries</h3>
+                    <p>Entretenimento</p>
+                    <div class="description">
+                        Nada como poder maratonar seus filmes e séries favoritos para esquecer o mundo não é mesmo ?? 
+                    </div>
+                    <a href="https://www.netflix.com/br/" target="_blank">Ir para a ideia</a>
                 </div>
-                <a href="https://www.netflix.com/br/" target="_blank">Ir para a ideia</a>
             </div>
-                </div>
         </section>
-
-</section>
-
-
-
-        </div>
-
-<div id="modal" class="hide">
-    <div class="content">
-        <h1>Nova Ideia</h1>
-
-        <form action="SuccessIdea.html" onsubmit="return checkFields(event)">
-
-            <div class="input-wrapper">
-                <label for="title">Título da Ideia</label>
-                <input type="text" name="title">
-                
-            </div>
-
-            <div class="input-wrapper">
-                <label for="category">Categoria</label>
-                <input type="text" name="category">
-
-            </div>
-
-            <div class="input-wrapper">
-                <label for="image">Link da imagem</label>
-                <input type="url" name="image">
-
-            </div>
-
-            <div class="input-wrapper">
-                <label for="description">Digite uma descrição para essa ideia</label>
-                <textarea name="description" cols="30" rows="10"></textarea>
-
-            </div>
-
-            <div class="input-wrapper">
-                <label for="link">Link da ideia</label>
-                <input type="url" name="link">
-            
-            </div>
-
-            <a href="index.html" onclick="onOff()">Voltar</a>
-            <button>Salvar</button>
-        </form>
-    </div>
+        
+        <footer>
+            Com ❤ Matheus.
+        </footer>
+    </section>
 </div>
-
-        <script src="scripts.js"></script>
+       
     </body>
 </html>
