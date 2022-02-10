@@ -58,11 +58,6 @@ p,.description{
 
 /* PADROES*/
 
-#intro{
-    width: 300px;
-    margin-right: 64px;
-}
-
 #container{
     width: 80%;
     max-width: 980px;
@@ -85,7 +80,8 @@ p,.description{
 }
 
 #intro{
-    margin-top: 64px;
+    mwidth: 300px;
+    margin-right: 64px;
 }
 
 main{
