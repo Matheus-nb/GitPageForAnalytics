@@ -68,13 +68,13 @@ p,.description{
     flex-direction:column
 }
 
-.menu {
+.menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav {
+.nav{
     display: flex;
     gap: 20px;
 }
