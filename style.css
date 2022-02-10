@@ -35,7 +35,7 @@ p,.description{
     color: white;
     background: #ac5ea2;
 
-    width: 150px;
+    width: 132px;
     height: 40px;
 
     border-radius: 8px;
@@ -68,6 +68,14 @@ p,.description{
     flex-direction:column
 }
 
+#menu{
+    height:70px
+}
+
+.intro{
+    display:flex
+}
+
 .menu{
     display: flex;
     justify-content: space-between;
@@ -91,7 +99,7 @@ main{
 
 #buttons{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
     margin-bottom: 32px;
 
