@@ -196,6 +196,10 @@ footer a {
     text-transform: uppercase;
 }
 
+.content h3{
+    color: black;
+}
+
 form {
     width: 80%;
     max-width: 800px;
