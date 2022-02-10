@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+
+<html lang="pt-br"> 
+    
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-220003080-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-220003080-1');
+        </script>
+
+        <meta charset="UTF-8">
+        <title>Casa Criativa</title>
+        
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+
+    
+    <body>
+        <div id="container">
+            <header class="menu">
+        <div>
+        <a href="index.html">
+            <img src="logo.png" alt="Imagem da Logomarca">
+        </a>
+        </div>
+        
+        <div class="nav">
+            <a href="ideias.html">Ideias</a>
+            <a href="IdeiaDaSemana.html">Ideia da Semana</a>
+            <a href="ideiasNew.html">Adicionar + Ideias</a>
+            <a href="contato.html">Contatos</a>
+            <a href="Avaliação.html">Avaliação</a>    
+        </div>
+    </header>
+            
+    <section id="intro">
+        <main>
+            <p>
+                Ficar em casa em períodos longos,não deve ser nada fácil.
+            </p>
+
+            <p>  
+                Por isso,iremos catalogar ideias,<strong>brincadeiras,jogos,filmes,
+                livros,cursos,dicas</strong> e tudo que for necessário para tornar 
+                esse momento mais interessante.
+            </p>
+
+            <p>    
+                Comece clicando em ver ideias para ver as 
+                ideias cadastradas e contribua adicionando a sua ideia.
+            </p>
+        </main>
+    </section>
+            
+    <section id="last-ideias">
+        <div class="content">
+        <h1>Nos Envie um e-mail</h1>
+
+        <form action="index.html" onsubmit="return checkFields(event)">
+
+            <div class="input-wrapper">
+                <label for="title">Título do E-mail</label>
+                <input type="text" name="title">
+                
+            </div>
+
+            <div class="input-wrapper">
+                <label for="category">Assunto</label>
+                <input type="text" name="category">
+
+            </div>
+
+            <div class="input-wrapper">
+                <label for="description">Digite o corpo do e-mail</label>
+                <textarea name="description" cols="30" rows="10"></textarea>
+
+            </div>
+
+            <div class="input-wrapper">
+                <label for="link">Link de discord para contato</label>
+                <input type="url" name="link">
+            
+            </div>
+
+            <a href="index.html" onclick="onOff()">Voltar</a>
+            <button>Salvar</button>
+        </form>
+    </div>
+        </section>
+        
+        <footer>
+            Com ❤ Matheus.
+        </footer>
+    </section>
+</div>
+       
+    </body>
+</html>
