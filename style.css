@@ -90,6 +90,7 @@ p,.description{
 #intro{
     mwidth: 300px;
     margin-right: 64px;
+    margin-top: 30px
 }
 
 main{
@@ -153,7 +154,7 @@ footer a {
     border-radius: 8px;
 
 
-    padding: 32px;
+    padding: 24px;
 
     margin-bottom: 32px;
 }
