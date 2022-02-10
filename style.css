@@ -185,9 +185,9 @@ footer a {
 /* MODAL */
 
 .content{
-    margin-top: 5%;
+    margin-top: 28px;
     
-    color: white;
+    color: #ac5ea2;
 }
 
 .content h1{
@@ -239,7 +239,7 @@ form a {
     width: 150px;
     height: 40px;
 
-    background-color: #ffffff22;
+    background-color: #ac5ea2;
     color: white;
 
     display: flex;
@@ -265,7 +265,7 @@ form a:hover{
 }
 
 form button{
-    background: white;
+    background: burlywood;
 
     width: 150px;
     height: 40px;
