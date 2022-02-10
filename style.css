@@ -291,7 +291,7 @@ form button:hover {
 
 
 /* IDEIA.HTML */
-#page-ideias+ section#ideas{
+#page-ideias+ #ideas{
     display:block;
 }
 
