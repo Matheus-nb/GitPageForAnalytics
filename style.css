@@ -184,40 +184,19 @@ footer a {
 
 /* MODAL */
 
-
-#modal {
-    background: #8a4480 ;
-
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-
-
-    display: flex;
-    justify-content: center;
-
-    transition: 400ms;
-}
-
-#modal.addScroll{
-    overflow: auto;
-}
-
-#modal .content{
+.content{
     margin-top: 5%;
     
     color: white;
 }
 
-#modal .content h1{
+.content h1{
     text-align: center;
 
     text-transform: uppercase;
 }
 
-#modal form {
+form {
     width: 80%;
     max-width: 800px;
 
@@ -310,10 +289,6 @@ form button:hover {
     text-decoration: none;
 }
 
-#modal.hide{
-    opacity: 0;
-    visibility: hidden;
-}
 
 /* IDEIA.HTML */
 #page-ideias+ section#ideas{
