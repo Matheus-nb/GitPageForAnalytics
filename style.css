@@ -296,6 +296,10 @@ form button:hover {
 
 
 /* IDEIA.HTML */
+#page-agradecimento section#ideas{
+    display:block;
+}
+
 #page-ideias2 section#ideas{
     display:block;
 }
