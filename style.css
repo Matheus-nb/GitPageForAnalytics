@@ -65,12 +65,22 @@ p,.description{
     margin: 40px auto;
 
     display: flex;
+    flex-direction:column
+}
+
+header .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu nav {
+    display: flex;
+    gap: 20px;
 }
 
 #intro{
-    width: 300px;
-
-    margin-right: 64px;
+    margin-top: 64px;
 }
 
 main{
