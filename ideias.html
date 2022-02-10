@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+
+<html lang="pt-br"> 
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Casa Criativa</title>
+
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    
+    <body>
+        <div id="container">
+            
+             <header>
+        <a href="/">
+            <img src="/logo.png" alt="Imagem da Logomarca">
+        </a>
+        <nav>
+            <li><a href="index.html">Início</a></li>
+            <li><a class="button" href="#" onclick="onOff()">Nova Ideia</a></li>
+        </nav>
+    </header>
+
+    <section id="title">
+        <p>em exibição</p>
+        <h1>Ideias</h1>
+    </section>
+
+    <main>
+        <section id="ideas">
+
+            <div class="idea">  
+        <img src="cozinhando.png" alt="Imagem de cozinhar">
+                        
+            <div class="content">
+                <h3>Aprender a cozinhar</h3>
+                <p>Gastronómica</p>
+                <div class="description">
+                    Aprender a cozinhar pode ser um hobbie novo e inesperado para tirar a cabeça da rotina.
+                </div>
+                <a href="https://receitas.globo.com" target="_blank">Ir para a ideia</a>
+            </div>
+            
+            <div class="idea">  
+        <img src="abra-o-livro.png" alt="Imagem de ler">
+                        
+            <div class="content">
+                <h3>Conhecer a leitura</h3>
+                <p>Conhecimentos/p>
+                <div class="description">
+                    Ler livros diariamente pode lhe dar uma extrema imahinação e satisfação.
+                </div>
+                <a href="https://www.amazon.com.br/Livros/b?ie=UTF8&node=6740748011" target="_blank">Ir para a ideia</a>
+            </div>
+            
+            <div class="idea">  
+         <img src="tira-de-filme.png" alt="Imagem de filme">
+                        
+            <div class="content">
+                <h3>Maratonar filmes/séries</h3>
+                <p>Entretenimento/p>
+                <div class="description">
+                    Nada como poder maratonar seus filmes e séries favoritos para esquecer o mundo não é mesmo ?? 
+                </div>
+                <a href="https://www.netflix.com/br/" target="_blank">Ir para a ideia</a>
+            </div>
+    </div>
+        </section>
+    </main>
+
+    <footer>
+        Com ❤ <a href="https://rocketseat.com.br/" target="_blank">Rocketseat</a> 
+    </footer>
+
+        </div>
+
+        <div id="modal" class="hide">
+    <div class="content">
+        <h1>Nova Ideia</h1>
+
+        <form action="/" method="POST" onsubmit="return checkFields(event)">
+
+            <div class="input-wrapper">
+                <label for="title">Título da Ideia</label>
+                <input type="text" name="title">
+                
+            </div>
+
+            <div class="input-wrapper">
+                <label for="category">Categoria</label>
+                <input type="text" name="category">
+
+            </div>
+
+            <div class="input-wrapper">
+                <label for="image">Link da imagem</label>
+                <input type="url" name="image">
+
+            </div>
+
+            <div class="input-wrapper">
+                <label for="description">Digite uma descrição para essa ideia</label>
+                <textarea name="description" cols="30" rows="10"></textarea>
+
+            </div>
+
+            <div class="input-wrapper">
+                <label for="link">Link da ideia</label>
+                <input type="url" name="link">
+            
+            </div>
+
+            <a href="#" onclick="onOff()">Voltar</a>
+            <button>Salvar</button>
+        </form>
+    </div>
+</div>
+
+        <script src="scripts.js"></script>
+    </body>
+</html>
