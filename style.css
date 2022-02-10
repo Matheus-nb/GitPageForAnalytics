@@ -316,6 +316,10 @@ form button:hover {
 }
 
 /* IDEIA.HTML */
+#page-ideias+ #ideias{none
+    display:block;
+}
+
 #page-ideas #container {
     display: block;
 }
