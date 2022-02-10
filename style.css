@@ -295,7 +295,7 @@ form button{
 
     cursor: pointer;
 
-    margin-top: 32px;
+    margin-top: 32px;age-
 
     grid-column: 2;
     justify-self: end;
@@ -316,7 +316,7 @@ form button:hover {
 }
 
 /* IDEIA.HTML */
-#page-ideias+ #ideias{none
+#page-ideias+ section#ideas{
     display:block;
 }
 
