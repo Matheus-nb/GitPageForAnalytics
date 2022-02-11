@@ -31,6 +31,10 @@ p,.description{
     letter-spacing: 0.1px;
 }
 
+.rating{
+    height: 300px;
+}
+
 .avaliacao{
     display: flex;
     justify-content: center;
