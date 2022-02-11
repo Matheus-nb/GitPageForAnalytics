@@ -31,6 +31,28 @@ p,.description{
     letter-spacing: 0.1px;
 }
 
+.avaliacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+}
+
+form .avalicao a{
+    background-color: #e5e5e5;
+}
+
+form .avaliacao a:hover{
+    background: #e5e5e5;
+    color: #ac5ea2;
+    text-decoration: none;
+}
+
+form .avaliacao button{
+    position: absolute;
+    margin-top: 300px;
+}
+
 .button {
     color: white;
     background: #ac5ea2;
