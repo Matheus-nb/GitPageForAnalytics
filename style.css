@@ -42,17 +42,17 @@ form.rating{
     height: 160px;
 }
 
-form.avalicao a{
+form .avalicao a{
     background-color: #e5e5e5;
 }
 
-form.avaliacao a:hover{
+form .avaliacao a:hover{
     background: #e5e5e5;
     color: #ac5ea2;
     text-decoration: none;
 }
 
-form.ratingButton{
+form button.ratingButton{
     position: absolute;
     margin-top: 300px;
 }
