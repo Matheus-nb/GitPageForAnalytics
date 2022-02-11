@@ -100,7 +100,7 @@ if (estrela == 1){
  avaliacao = 0;
 }}
  
- document.getElementById('rating').innerHTML = avaliacao;
+ 
  
 }
 
