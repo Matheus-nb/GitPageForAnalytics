@@ -1,7 +1,7 @@
 function Avaliar(estrela) {
  var url = window.location;
  url = url.toString()
- url = url.split("Avaliação.html");
+ url = url.split("Avaliacao.html");
  url = url[0];
 
  var s1 = document.getElementById("s1").src;
