@@ -332,8 +332,14 @@ form button:hover {
 
 
 /* IDEIA.HTML */
+#page-agradecimento #container{
+    flex-direction: row;
+}
+
+
 #page-agradecimento section#ideas{
     display:block;
+    margin-top:130px
 }
 
 #page-ideias2 section#ideas{
