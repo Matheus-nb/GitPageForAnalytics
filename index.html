@@ -36,7 +36,7 @@
                     </div>
 
                     <div class="nav">
-                        <a class="btn-1" onclick="ga('send', 'event', 'PageIdeas', 'click')" href="ideias.html">Ideias</a>
+                        <a class="btn-1" onclick="sendHits('PageIdeas')" href="ideias.html">Ideias</a>
                         <a class="btn-2" href="IdeiaDaSemana.html">Ideia da Semana</a>
                         <a class="btn-3" href="ideiasNew.html">Adicionar + Ideias</a>
                         <a class="btn-4" href="contato.html">Contatos</a>
@@ -117,5 +117,13 @@
         </div>
     </section>
 </div>
+        <script>
+            function sendHits(type){
+                ga('send', 'event', type, 'click')
+            }
+        </script>
+        
+        
+        
     </body>
 </html>
