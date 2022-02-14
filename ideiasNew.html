@@ -46,7 +46,7 @@
     <div class="content">
         <h1>Nova Ideia</h1>
 
-        <form action="SuccessIdea.html" onsubmit="return checkFields(event)">
+        <form id="test" action="SuccessIdea.html" onsubmit="return checkFields(event)">
 
             <div class="input-wrapper">
                 <label for="title">Título da Ideia</label>
@@ -91,6 +91,29 @@
     </section>
 </div>
         <script src="scripts.js"></script>
+    <script>
+                // Gets a reference to the form element, assuming
+// it contains the id attribute "signup-form".
+var form = document.getElementById('test');
+
+// Adds a listener for the "submit" event.
+form.addEventListener('submit', function(event) {
+
+  // Prevents the browser from submitting the form
+  // and thus unloading the current page.
+  event.preventDefault();
+
+  // Sends the event to Google Analytics and
+  // resubmits the form once the hit is done.
+  ga('send', 'event', 'Signup Form', 'submit', {
+    hitCallback: function() {
+      form.submit();
+    }
+  });
+});
+
+    </script>
+
     </body>
 </html>
 
