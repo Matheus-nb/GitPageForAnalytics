@@ -37,10 +37,10 @@
 
                     <div class="nav">
                         <a class="btn-1" onclick="sendHits('PageIdeas')" href="ideias.html">Ideias</a>
-                        <a class="btn-2" href="IdeiaDaSemana.html">Ideia da Semana</a>
-                        <a class="btn-3" href="ideiasNew.html">Adicionar + Ideias</a>
-                        <a class="btn-4" href="contato.html">Contatos</a>
-                        <a class="btn-5" href="Avaliacao.html">Avaliação</a>    
+                        <a class="btn-2" onclick="sendHits('PageIdeiasDaSemana')" href="IdeiaDaSemana.html">Ideia da Semana</a>
+                        <a class="btn-3" onclick="sendHits('PageAddIdeias')" href="ideiasNew.html">Adicionar + Ideias</a>
+                        <a class="btn-4" onclick="sendHits('Contato')" href="contato.html">Contatos</a>
+                        <a class="btn-5" onclick="sendHits('Avaliação')" href="Avaliacao.html">Avaliação</a>    
                     </div>
             </header>
         </div>
@@ -65,8 +65,8 @@
             </main>
 
             <section id="buttons">
-                <a href="ideiasNew.html" class="button" id="btn-6" >Adicionar + ideias</a>
-                <a href="ideias.html" class="button" id="btn-7">Ver ideias</a>
+                <a onclick="sendHits('PageAddIdeias')" href="ideiasNew.html" class="button" id="btn-6" >Adicionar + ideias</a>
+                <a onclick="sendHits('PageIdeas')" href="ideias.html" class="button" id="btn-7">Ver ideias</a>
             </section>
             <footer>
             Com ❤ Matheus.
@@ -84,7 +84,7 @@
                         <div class="description">
                             Aprender a cozinhar pode ser um hobbie novo e inesperado para tirar a cabeça da rotina.
                         </div>
-                        <a id="btn-8" href="https://receitas.globo.com" target="_blank">Ir para a ideia</a>
+                        <a onclick="sendHits('IdeiaCozinhando')" id="btn-8" href="https://receitas.globo.com" target="_blank">Ir para a ideia</a>
                     </div>
               </div>
 
@@ -97,7 +97,7 @@
                         <div class="description">
                             Ler livros diariamente pode lhe dar uma extrema imahinação e satisfação.
                         </div>
-                        <a id="btn-9" href="https://www.amazon.com.br/Livros/b?ie=UTF8&node=6740748011" target="_blank">Ir para a ideia</a>
+                        <a onclick="sendHits('IdeiaLeitura')" id="btn-9" href="https://www.amazon.com.br/Livros/b?ie=UTF8&node=6740748011" target="_blank">Ir para a ideia</a>
                     </div>
                 </div>
 
@@ -110,7 +110,7 @@
                         <div class="description">
                             Nada como poder maratonar seus filmes e séries favoritos para esquecer o mundo não é mesmo ?? 
                         </div>
-                        <a id="btn-10" href="https://www.netflix.com/br/" target="_blank">Ir para a ideia</a>
+                        <a onclick="sendHits('IdeiaMaratonar')" id="btn-10" href="https://www.netflix.com/br/" target="_blank">Ir para a ideia</a>
                     </div>
                 </div>
             </section>
