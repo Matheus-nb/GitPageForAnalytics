@@ -12,12 +12,6 @@
           gtag('js', new Date());
 
           gtag('config', 'UA-220003080-1');
-          ga('send', {
-              hitType: 'event',
-              eventCategory: 'Button',
-              eventAction: 'click',
-              eventLabel: 'btn-1'
-            });
         </script>
 
         <meta charset="UTF-8">
@@ -125,13 +119,8 @@
         
  <script>
     var btn1 = document.getElementsByClassName('btn-1');
-    btn1.addEventListener('click', function(event) { 
-      event.preventDefault();
-      ga('send', 'event', 'Pagina Ideias', 'click', {
-        hitCallback: function() {
-          btn1.click();
-        }
-      });
+    btn1.addEventListener('click', function(){ 
+      ga('send', 'event', 'Pagina Ideias', 'click')
     });
 
 </script>
