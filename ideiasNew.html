@@ -4,15 +4,17 @@
 <html lang="pt-br"> 
     
     <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-220003080-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+        <!-- Google Analytics -->
+            <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-          gtag('config', 'UA-220003080-1');
-        </script>
+                ga('create', 'UA-220003080-1', 'auto');
+                ga('send', 'pageview');
+            </script>
+        <!-- End Google Analytics -->
 
         <meta charset="UTF-8">
         <title>Casa Criativa</title>
@@ -34,11 +36,11 @@
         </div>
         
         <div class="nav">
-            <a class="btn-1" href="ideias.html">Ideias</a>
-            <a class="btn-2" href="IdeiaDaSemana.html">Ideia da Semana</a>
-            <a class="btn-3" href="ideiasNew.html">Adicionar + Ideias</a>
-            <a class="btn-4" href="contato.html">Contatos</a>
-            <a class="btn-5" href="Avaliacao.html">Avaliação</a>    
+            <a onclick="sendHits('PageIdeas')" class="btn-1" href="ideias.html">Ideias</a>
+            <a onclick="sendHits('PageIdeiasDaSemana')" class="btn-2" href="IdeiaDaSemana.html">Ideia da Semana</a>
+            <a onclick="sendHits('PageAddIdeias')"class="btn-3" href="ideiasNew.html">Adicionar + Ideias</a>
+            <a onclick="sendHits('Contato')" class="btn-4" href="contato.html">Contatos</a>
+            <a onclick="sendHits('Avaliação')" class="btn-5" href="Avaliacao.html">Avaliação</a>    
         </div>
     </header>
             
@@ -46,7 +48,7 @@
     <div class="content">
         <h1>Nova Ideia</h1>
 
-        <form id="test" action="SuccessIdea.html" >
+        <form id="form" action="SuccessIdea.html" >
 
             <div class="input-wrapper">
                 <label for="title">Título da Ideia</label>
@@ -91,29 +93,14 @@
     </section>
 </div>
         <script src="scripts.js"></script>
-    <script>
-                // Gets a reference to the form element, assuming
-// it contains the id attribute "signup-form".
-var form = document.getElementById('test');
 
-// Adds a listener for the "submit" event.
-form.addEventListener('submit', function(event) {
-
-  // Prevents the browser from submitting the form
-  // and thus unloading the current page.
-  event.preventDefault();
-
-  // Sends the event to Google Analytics and
-  // resubmits the form once the hit is done.
-  ga('send', 'event', 'Signup Form', 'submit', {
-    hitCallback: function() {
-      form.submit();
-    }
-  });
-});
-
-    </script>
-
+    
+     <script>
+            function sendHits(type){
+                ga('send', 'event', 'Go to', 'click', type)
+            }
+        </script>
+    
     </body>
 </html>
 
