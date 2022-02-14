@@ -4,16 +4,17 @@
 <html lang="pt-br"> 
     
     <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-220003080-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+        <!-- Google Analytics -->
+            <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-          gtag('config', 'UA-220003080-1');
-        </script>
-
+                ga('create', 'UA-220003080-1', 'auto');
+                ga('send', 'pageview');
+            </script>
+        <!-- End Google Analytics -->
         <meta charset="UTF-8">
         <title>Casa Criativa</title>
         
@@ -35,7 +36,7 @@
                     </div>
 
                     <div class="nav">
-                        <a class="btn-1" onclick="sendFunction('pageIdeas')" href="ideias.html">Ideias</a>
+                        <a class="btn-1" onclick="ga('send', 'event', 'PageIdeas', 'click')" href="ideias.html">Ideias</a>
                         <a class="btn-2" href="IdeiaDaSemana.html">Ideia da Semana</a>
                         <a class="btn-3" href="ideiasNew.html">Adicionar + Ideias</a>
                         <a class="btn-4" href="contato.html">Contatos</a>
@@ -116,12 +117,5 @@
         </div>
     </section>
 </div>
-        <script>
-          function sendFunction(type) {
-              ga('send', 'event', type, 'click')
-            }
-        </script>
-
-       
     </body>
 </html>
