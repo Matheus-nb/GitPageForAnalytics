@@ -12,7 +12,7 @@ function Avaliar(estrela) {
     var avaliacao = 0;
 
     if (estrela == 5) {
-        if (s5 == url + "../public/assets/star0.png") {
+        if (s5 == url + "/public/assets/star0.png") {
             document.getElementById("s1").src = "../public/assets/star1.png";
             document.getElementById("s2").src = "../public/assets/star1.png";
             document.getElementById("s3").src = "../public/assets/star1.png";
@@ -31,7 +31,7 @@ function Avaliar(estrela) {
 
     //ESTRELA 4
     if (estrela == 4) {
-        if (s4 == url + "../public/assets/star0.png") {
+        if (s4 == url + "/public/assets/star0.png") {
             document.getElementById("s1").src = "../public/assets/star1.png";
             document.getElementById("s2").src = "../public/assets/star1.png";
             document.getElementById("s3").src = "../public/assets/star1.png";
@@ -50,7 +50,7 @@ function Avaliar(estrela) {
 
     //ESTRELA 3
     if (estrela == 3) {
-        if (s3 == url + "../public/assets/star0.png") {
+        if (s3 == url + "/public/assets/star0.png") {
             document.getElementById("s1").src = "../public/assets/star1.png";
             document.getElementById("s2").src = "../public/assets/star1.png";
             document.getElementById("s3").src = "../public/assets/star1.png";
@@ -69,7 +69,7 @@ function Avaliar(estrela) {
 
     //ESTRELA 2
     if (estrela == 2) {
-        if (s2 == url + "../public/assets/star0.png") {
+        if (s2 == url + "/public/assets/star0.png") {
             document.getElementById("s1").src = "../public/assets/star1.png";
             document.getElementById("s2").src = "../public/assets/star1.png";
             document.getElementById("s3").src = "../public/assets/star0.png";
@@ -88,7 +88,7 @@ function Avaliar(estrela) {
 
     //ESTRELA 1
     if (estrela == 1) {
-        if (s1 == url + "../public/assets/star0.png") {
+        if (s1 == url + "/public/assets/star0.png") {
             document.getElementById("s1").src = "../public/assets/star1.png";
             document.getElementById("s2").src = "../public/assets/star0.png";
             document.getElementById("s3").src = "../public/assets/star0.png";
