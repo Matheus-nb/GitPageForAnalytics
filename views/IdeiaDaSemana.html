@@ -14,6 +14,8 @@
         ga('send', 'pageview');
     </script>
 
+    <script src="https://www.youtube.com/iframe_api"></script>
+
     <meta charset="UTF-8">
     <title>Casa Criativa - Ideia da Semana</title>
 
@@ -76,12 +78,10 @@
                             <h3>Maratonar filmes/séries</h3>
                             <p>Ordem cronológica da Marvel</p>
                             <div class="description">
-                                <iframe class="btn-6" width="560" height="315"
-                                    src="https://www.youtube.com/embed/ZOkwhi9ytnw" title="YouTube video player"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen onclick="sendVideosHits('Ordem cronológica da Marvel')">
-                                </iframe>
+                                <div class="module module-home-video">
+                                    <span class="module-strip">Latest Product Video</span>
+                                    <div id="video"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -89,6 +89,27 @@
             </section>
         </div>
     </div>
+
+    <script>
+        var player, playing = false;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('video', {
+                height: '360',
+                width: '640',
+                videoId: 'xmhtV4270NU',
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+
+        function onPlayerStateChange(event) {
+            if (!playing) {
+                alert('onPlay is clicked');
+                playing = true;
+            }
+        }
+    </script>
 </body>
 
 </html>
