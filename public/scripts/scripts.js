@@ -165,3 +165,8 @@ function checkFields2(event) {
 function sendClickHits(Label) {
     ga('send', 'event', 'Go to', 'click', Label)
 }
+
+function sendVideosHits(Label) {
+    ga('send', 'event', 'Video', 'play', Label)
+}
+
